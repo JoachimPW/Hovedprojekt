@@ -15,9 +15,14 @@ export class DataService {
     return of(IssueBoxes);
   }
   
-
+  getIssueBoxCategoryId(id: number): Observable<IssueBox> {
+    // Todo: send the message _after_ fetching the hero
+    
+    return of(IssueBoxes.find(IssueBox => IssueBox.boxId === id));
+  }
   
 
   constructor() { }
 
 }
+

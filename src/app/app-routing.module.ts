@@ -5,9 +5,12 @@ import { IssueboxesComponent } from './boxcontainer/issueboxes/issueboxes.compon
 import { BoxcontainerComponent } from './boxcontainer/boxcontainer.component';
 
 const routes: Routes = [
+  { path: 'boxcontainer', component: BoxcontainerComponent },
+  { path: '', redirectTo: '/boxcontainer', pathMatch: 'full' },
   { path: 'issueboxes', component: IssueboxesComponent },
   { path: 'menuitems', component: MenuItemsComponent },
-  { path: 'boxcontainer', component: BoxcontainerComponent },
+  
+  { path: 'issueboxes/:boxId', component: IssueboxesComponent }
   
 ];
 

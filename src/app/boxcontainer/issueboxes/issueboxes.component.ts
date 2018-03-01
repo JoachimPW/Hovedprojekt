@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { IssueBox } from './issuebox';
 import { IssueBoxes } from './issueboxes';
 import { DataService } from '../../data.service';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+
+
 
 @Component({
   selector: 'app-issueboxes',
