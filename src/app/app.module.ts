@@ -11,6 +11,7 @@ import { BoxcontainerComponent } from './boxcontainer/boxcontainer.component';
 import { IssueboxesComponent } from './boxcontainer/issueboxes/issueboxes.component';
 import { IssueboxEditComponent } from './issuebox-edit/issuebox-edit.component';
 import { DataService } from './data.service';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { DataService } from './data.service';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [
     DataService,

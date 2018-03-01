@@ -23,7 +23,8 @@ selectedIssueBox: IssueBox;
   }
 
   getIssueBox(): void {
-    this.issueboxes = this.dataService.getIssueBoxes();
+    this.dataService.getIssueBoxes()
+        .subscribe(issueboxes => this.issueboxes = issueboxes);
   }
 
 }

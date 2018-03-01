@@ -1,1 +1,10 @@
+.links {
 
+    position:fixed;
+    right:0;
+    width:200px;
+    height:200px;
+    border:1px solid black;
+    background-color:grey;
+    font-size:32px;
+}
