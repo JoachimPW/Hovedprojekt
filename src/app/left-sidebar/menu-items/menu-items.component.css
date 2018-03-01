@@ -1,0 +1,27 @@
+
+
+.details {
+    border:1px solid black;
+    margin-left:250px;
+    width:300px;
+    position:fixed;
+    top:0;
+}
+
+.menuitems {
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 50px;
+    text-align: left;
+    color: white;
+    font-size: 24px;
+    padding: 0;
+    line-height: 50px;
+    width: 100%;
+    font-family:"roboto";
+    font-size:14px;
+}
+
+.menuitems li:hover {
+    background-color:lightblue;
+}

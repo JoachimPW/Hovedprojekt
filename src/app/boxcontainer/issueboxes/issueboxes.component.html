@@ -1,0 +1,17 @@
+<!--<div class="issuebox">
+  <h3> TEST </h3>
+  <p>Problem</p>
+  <p>Solution</p>
+</div> -->
+
+<div class="issuebox" *ngFor="let issuebox of issueboxes"
+  [class.selected]="issuebox === selectedIssueBox"
+  (click)="onSelect(issuebox)">
+  <h3>{{issuebox.heading}} </h3>
+  <p> {{issuebox.problem}}  </p>
+  <p> {{issuebox.solution}} </p>
+</div>
+
+<app-issuebox-edit [issuebox]="selectedIssueBox"></app-issuebox-edit>
+
+

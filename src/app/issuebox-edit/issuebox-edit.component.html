@@ -1,0 +1,8 @@
+<div *ngIf="issuebox" class="editBox">
+  <h3>{{issuebox.boxId}}</h3>
+  <div>
+    <input [(ngModel)]="issuebox.heading" placeholder="Oveskrift">
+    <input [(ngModel)]="issuebox.problem" placeholder="Problem">
+    <input [(ngModel)]="issuebox.solution" placeholder="Solution">
+  </div>
+</div>

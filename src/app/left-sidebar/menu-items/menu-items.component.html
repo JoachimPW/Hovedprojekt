@@ -1,0 +1,23 @@
+
+
+
+
+<ul class="menuitems">
+  <li *ngFor="let menuitem of menuitems" (click)="onSelect(menuitem)">
+    {{menuitem.category}} 
+  </li>
+</ul>
+
+
+
+<div *ngIf="selectedMenuItem" class="details">
+<h2>{{ selectedMenuItem.category | uppercase }} Details</h2>
+<div><span>id: </span>{{selectedMenuItem.categoryId}} </div>
+<div><span> Icon: </span> {{selectedMenuItem.icon}} </div>
+<div>
+  <label>name:
+    <input [(ngModel)]="selectedMenuItem.category" placeholder="name">
+  </label>
+</div>
+
+</div>
