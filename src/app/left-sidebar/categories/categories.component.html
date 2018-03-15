@@ -1,0 +1,6 @@
+<ul class="menuitems">
+  <li *ngFor="let category of categories" (click)="onSelect(menuitem)">
+    <i class="{{category.icon}}" style="color:white"></i>
+    <a routerLink="category/{{category.categoryId}}">{{category.category}}</a>
+  </li>
+</ul>

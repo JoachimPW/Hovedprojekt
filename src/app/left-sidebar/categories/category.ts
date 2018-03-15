@@ -1,5 +1,5 @@
-export class MenuItem {
+export class Category {
     categoryId: number;
     category: string;
-    
+    icon: string;
 }

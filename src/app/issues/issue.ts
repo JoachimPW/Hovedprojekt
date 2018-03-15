@@ -1,5 +1,5 @@
-export class IssueBox {
-    boxId: number;
+export class Issue {
+    issueId: number;
     categoryId: number;
     heading: string;
     problem: string;

@@ -1,0 +1,26 @@
+<div class="boxcontainer">
+
+  <div *ngFor="let Issue of Issues" class="inlineblock">
+
+    <div *ngIf="Issue.categoryId===categoryId" class="issuebox" [class.selected]="Issue === selectedIssue" (click)="onSelect(Issue)">
+      <h3>{{Issue.heading}} {{Issue.issueId}} </h3>
+      <p>
+        <b>Problem: </b> {{Issue.problem}} </p>
+      <p>
+        <b>Solution: </b> {{Issue.solution}} </p>
+    </div>
+  </div>
+  <i class="fa fa-plus-square"></i>
+  <div class="buildingTool" [class.toolShow]="toolActive">
+    <form (submit)="addIssue()" class="opretIssues">
+      <textarea type="text" [(ngModel)]="heading" name="input" placeholder="Overskrift"></textarea>
+      <textarea type="text" [(ngModel)]="problem" name="input" placeholder="Problem"></textarea>
+      <textarea type="text" [(ngModel)]="solution" name="input" placeholder="Solution"> </textarea>
+      <button type="submit"> Tilføj issue </button>
+    </form>
+
+  </div>
+
+  <app-issue-edit [issues]="Issues" [issue]="selectedIssue"></app-issue-edit>
+
+</div>

@@ -1,0 +1,31 @@
+.editBox {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 10px;
+  width: 300px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-left: 920px;
+  background-color: #eee;
+  text-align: center;
+  font-family: 'raleway' !important;
+}
+
+.editBox input {
+  width: 90%;
+  height: 25px;
+  border: 1px solid rgb(169, 169, 169);
+  margin-bottom: 5px;
+  font-family: 'raleway' !important;
+}
+
+.deleteBtn {
+  font-size: 18px;
+  background-color: red;
+  border: 1px solid darkred;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  font-family: 'raleway' !important;
+}

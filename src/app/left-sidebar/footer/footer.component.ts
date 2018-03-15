@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FooterItems } from './footerItemArray';
-import { FooterItem } from './FooterItemClass';
+import { FooterItems } from './footerItems';
+import { FooterItem } from './FooterItem';
 
 @Component({
   selector: 'app-footer',
@@ -8,7 +8,7 @@ import { FooterItem } from './FooterItemClass';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-footeritems = FooterItems;
+  footeritems = FooterItems;
   constructor() { }
 
   ngOnInit() {

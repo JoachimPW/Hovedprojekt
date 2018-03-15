@@ -1,23 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MenuItemsComponent } from './left-sidebar/menu-items/menu-items.component';
-import { IssueboxesComponent } from './boxcontainer/issueboxes/issueboxes.component';
-import { BoxcontainerComponent } from './boxcontainer/boxcontainer.component';
+import { CategoriesComponent } from './left-sidebar/categories/categories.component';
+
+import { Category } from './left-sidebar/categories/Category';
+import { Categories } from './left-sidebar/categories/categories';
+import { IssuesComponent } from './issues/issues.component';
 
 const routes: Routes = [
-  { path: 'boxcontainer', component: BoxcontainerComponent },
-  { path: '', redirectTo: '/boxcontainer', pathMatch: 'full' },
-  { path: 'issueboxes', component: IssueboxesComponent },
-  { path: 'menuitems', component: MenuItemsComponent },
-  
-  { path: 'issueboxes/:boxId', component: IssueboxesComponent }
-  
+  { path: 'boxcontainer', component: IssuesComponent },
+  { path: '', redirectTo: '/category/1', pathMatch: 'full' },
+  /*{ path: 'issueboxes', component: IssueboxesComponent }, */
+  { path: 'categories', component: CategoriesComponent },
+  { path: 'category/:categoryId', component: IssuesComponent },
+
 ];
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)
-  ],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
   declarations: []
 })
