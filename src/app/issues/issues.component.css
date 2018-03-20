@@ -5,7 +5,7 @@
   max-width: 100%;
   color: black;
   margin-left: 275px;
-  margin-top: 30px;
+  margin-top: 55px;
   transition: all 1s;
   font-family: 'raleway' !important;
 }
@@ -37,7 +37,7 @@
   border: 4px solid red;
 }
 
-/* ---- ISSUES SLUT ---- */
+/* ---- ISSUES END ---- */
 
 /* ---- FORM MED INPUT ---- */
 
@@ -81,7 +81,7 @@ textarea:first-of-type {
   margin-top: 5px;
 }
 
-/* ---- FORM SLUT ---- */
+/* ---- FORM END ---- */
 
 div _ngcontent-c4 {
   display: inline-block;
@@ -132,6 +132,11 @@ body>app-root>app-issueboxes>div>div:nth-child(5) {
   opacity: 0;
 }
 
+.toolActive {
+  opacity: 0;
+  transition: all 2s;
+}
+
 .btnToolTriggerHide {
   height: 0;
 }
@@ -140,14 +145,15 @@ body>app-root>app-issueboxes>div>div:nth-child(5) {
   outline: 0;
 }
 
-/* ---- BUILDING TOOL SLUT ---- */
+/* ---- BUILDING TOOL END ---- */
 
-.boxcontainer i {
+.toggleTool {
   position: fixed;
   left: 0;
   bottom: 0;
-  font-size: 50px;
+  font-size: 20px;
   color: #009ed4;
   margin-left: 204px;
   display: inline-block;
+  padding: 10px;
 }

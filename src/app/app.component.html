@@ -1,11 +1,11 @@
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-<body>
-<div class="logoHeader">
-  <img width="150" alt="Princh Logo" src="assets/PrinchLogo.png">
-</div>
 
-<app-left-sidebar></app-left-sidebar>
-<app-issues></app-issues>
-<router-outlet></router-outlet>
+<body>
+  <div class="logoHeader">
+    <a routerLink="/home">
+      <img width="150" alt="Princh Logo" src="assets/PrinchLogo.png">
+    </a>
+  </div>
+  <router-outlet></router-outlet>
 </body>

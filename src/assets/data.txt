@@ -2,13 +2,10 @@ import { Issue } from './issue';
 
 export const Issues: Issue[] = [
   {
-    issueId: 1,
-    categoryId: 1,
-    heading: 'Print job stuck "in progress',
+    issueId: 1, categoryId: 1, heading: 'Print job stuck "in progress',
     problem: 'The customer paid but no printjob appeared in the Admin Panel.',
     solution: 'The printjob is failed and will not be printed. The payment will not be withdrawn. The amount is reserved and will be deleted.'
   },
-
   {
     issueId: 2, categoryId: 1, heading: 'Print job stuck "in progress',
     problem: 'The customer paid but no printjob appeared in the Admin Panel.',

@@ -1,35 +1,63 @@
-
-
 .details {
-    border:1px solid black;
-    margin-left:250px;
-    width:300px;
-    position:fixed;
-    top:0;
+  border: 1px solid black;
+  margin-left: 250px;
+  width: 300px;
+  position: fixed;
+  top: 0;
 }
 
-.menuitems {
-    display: inline-block;
-    list-style-type: none;
-    margin-top: 50px;
-    text-align: left;
-    font-size: 24px;
-    padding: 0;
-    line-height: 50px;
-    width: 100%;
-    padding:5px;
+.categories {
+  display: inline-block;
+  list-style-type: none;
+  margin-top: 50px;
+  text-align: left;
+  font-size: 24px;
+  padding-left:0px;
+  line-height: 50px;
+  width: 100%;
+  
 }
 
-.menuitems a {
-    font-size:18px;
-    color:white;
-    text-decoration:none;
+.categories a>button {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  font-family:'raleway';
 }
 
-.menuitems li:hover {
-    background-color:lightblue;
+.categories li:hover {
+  background-color: #0e9dd8;
 }
 
-.menuitems i {
-    font-size:18px;
+.categories a:hover {
+  text-decoration: underline !important;
+}
+
+.categories i {
+  font-size: 18px;
+}
+
+.activeCategory {
+  background-color: #0e9dd8;
+}
+
+.activeCategory button {
+  text-decoration: underline !important;
+  background-color:#0e9dd8;
+}
+
+.categoryClick {
+    width:100%;
+    height: 50px;
+    text-align:left;
+    background-color:#152235;
+    border:none;
+}
+
+.categoryClick:focus {
+    outline:none;
+}
+
+.categoryClick:hover {
+    background-color:#0e9dd8;
 }

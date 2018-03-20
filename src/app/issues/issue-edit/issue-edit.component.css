@@ -28,4 +28,10 @@
   padding: 10px;
   color: white;
   font-family: 'raleway' !important;
+  opacity:0.8;
+}
+
+.deleteBtn:hover {
+  cursor:pointer;
+  opacity:1;
 }
