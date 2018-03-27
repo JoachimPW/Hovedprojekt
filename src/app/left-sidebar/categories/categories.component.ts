@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-import { Categories } from './Categories';
-import { IssueService } from '../../issue.service';
+import { CategoryService } from '../../services/category.service';
+import { Category } from './category';
 
 @Component({
   selector: 'categories',
@@ -9,9 +9,14 @@ import { IssueService } from '../../issue.service';
   styleUrls: ['./categories.component.css']
 })
 
-export class CategoriesComponent implements OnInit {
-  categories = Categories; 
+export class CategoriesComponent {
+  categories: Category[];
 
+  constructor(private categoryService: CategoryService) {
+  }
 
+  ngOnInit(): void {
+    this.categoryService.getCategories().subscribe(categories => this.categories = categories);
+  }
 
 }

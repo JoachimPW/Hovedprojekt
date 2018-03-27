@@ -1,25 +1,22 @@
-<div class="boxcontainer">
+<div class="boxContainer">
 
-  <div *ngFor="let Issue of Issues" class="inlineblock">
+  <div *ngFor="let issue of issues" class="inlineBlock">
 
-    <div *ngIf="Issue.categoryId===categoryId" class="issuebox" [class.selected]="Issue === selectedIssue" (click)="onSelect(Issue)">
-      <h3>{{Issue.heading}} {{Issue.issueId}} </h3>
-      <p> <b>Problem: </b> {{Issue.problem}} </p>
-      <p> <b>Solution: </b> {{Issue.solution}} </p>
+    <div *ngIf="issue.categoryId===categoryId" class="issueBox" [class.selected]="issue === selectedIssue" (click)="onSelect(issue)">
+      <h3>{{issue.name}} {{issue.issueId}} </h3>
+      <p> <b>Problem: </b> {{issue.problem}} </p>
+      <div class="imgBox">
+        <img src="../../assets/{{issue.image}}">
+      </div>
+      <p> <b>Solution: </b> {{issue.solution}} </p>
     </div>
+    
   </div>
 
-  <button class="toggleTool" (click)="activateTool()"> Toggle Tool</button>
-  <div class="buildingTool" [class.toolShow]="toolActive">
-    <form (submit)="addIssue()" class="opretIssues" name="issueForm">
-      <textarea type="text" [(ngModel)]="heading" name="input" placeholder="Overskrift"></textarea>
-      <textarea type="text" [(ngModel)]="problem" name="input" placeholder="Problem"></textarea>
-      <textarea type="text" [(ngModel)]="solution" name="input" placeholder="Solution"> </textarea>
-      <button type="submit"><i class="fa fa-plus"></i>  ADD ISSUE </button>
-    </form>
-  </div>
+  <issue-add></issue-add>
 
-  <issue-edit [issues]="Issues" [issue]="selectedIssue"></issue-edit>
+  <issue-edit [issue]="selectedIssue"></issue-edit>
 
 </div>
+
 <left-sidebar></left-sidebar>

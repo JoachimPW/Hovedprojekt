@@ -1,7 +1,8 @@
 export class Issue {
     issueId: number;
     categoryId: number;
-    heading: string;
+    name: string;
     problem: string;
+    image: string;
     solution: string;
 }

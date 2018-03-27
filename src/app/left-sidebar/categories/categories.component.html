@@ -1,8 +1,8 @@
 <ul class="categories">
   <li *ngFor="let category of categories" >
-    <a routerLink="/category/{{category.categoryId}}" routerLinkActive="activeCategory" routerLinkActiveOptions="{exact: true}" >
+    <a routerLink="/categories/{{category.categoryId}}" routerLinkActive="activeCategory" routerLinkActiveOptions="{exact: true}" >
       <button class="categoryClick" >
-        <i class="{{category.icon}}" style="color:white"></i> {{category.name}}
+        <i class="{{category.icon}}"></i> {{category.name}}
       </button>
     </a>
   </li>

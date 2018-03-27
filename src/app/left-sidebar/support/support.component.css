@@ -1,4 +1,4 @@
-.footer {
+.support {
   position: fixed;
   bottom: 0;
   background-color: #435063;
@@ -10,10 +10,10 @@
   list-style-type: none;
 }
 
-.footer h3 {
+.support h3 {
   text-align: center;
 }
 
-.footer li {
-    font-family: 'lato'
+.support li {
+  font-family: 'lato'
 }
