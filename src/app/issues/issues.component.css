@@ -6,7 +6,7 @@
   color: black;
   margin-left: 325px;
   margin-top: 55px;
-  padding-left:25px;
+  padding-left: 25px;
   transition: all 1s;
   font-family: 'Raleway', Arial, Helvetica, sans-serif !important;
 }
@@ -22,7 +22,7 @@
   width: 400px;
   height: auto;
   margin: 25px;
-  margin-right:75px;
+  margin-right: 75px;
   text-align: left;
   padding: 20px;
   border: 1px solid #c5c9d1;
@@ -32,16 +32,17 @@
   font-size: 18px;
   line-height: 1.5;
   vertical-align: middle;
-  align-items:center;
+  align-items: center;
   word-wrap: break-word;
 }
 
 .issueBox h3 {
-  text-align:center;
+  text-align: center;
 }
+
 .imgBox {
-  width:100%;
-  text-align:center;
+  width: 100%;
+  text-align: center;
 }
 
 .selected {
@@ -64,5 +65,16 @@ body>app-root>app-issueboxes>div>div:nth-child(5) {
   display: inline-block;
 }
 
-
-
+.issueSearch {
+  padding: 5px;
+  height: 25px;
+  width: 250px;
+  font-size: 22px;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-left:375px;
+  position:fixed;
+  top:20px;
+  
+}

@@ -2,7 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 
 import { Issue } from './issue';
 import { IssueService } from '../services/issue.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+
 
 @Component({
   selector: 'issues',
@@ -17,7 +18,8 @@ export class IssuesComponent implements OnInit {
   categoryId: number;
 
   constructor(private issueService: IssueService,
-    private route: ActivatedRoute) { }
+    private route: ActivatedRoute,
+    public router: Router) { }
 
   ngOnInit(): void {
     this.issueService.getIssues().subscribe(issues => this.issues = issues);

@@ -14,7 +14,14 @@ import { HomeComponent } from './home/home.component'
 import { IssueService } from './services/issue.service';
 import { SupporterService } from './services/supporter.service'
 import { CategoryService } from './services/category.service';
-import { IssueAddComponent } from './issues/issue-add/issue-add.component'
+import { IssueAddComponent } from './issues/issue-add/issue-add.component';
+import { FilterPipe } from './pipes/search-filter.pipe';
+import { ELearningComponent } from './e-learning/e-learning.component';
+import { MenuComponent } from './e-learning/menu/menu.component';
+import { LearningPointComponent } from './e-learning/menu/learning-point/learning-point.component'
+import { LearningPointsService } from './services/learning-points.service';
+import { AdminpanelComponent } from './e-learning/adminpanel/adminpanel.component';
+import { AdminTasksComponent } from './e-learning/adminpanel/admin-tasks/admin-tasks.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +32,13 @@ import { IssueAddComponent } from './issues/issue-add/issue-add.component'
     IssuesComponent,
     IssueEditComponent,
     HomeComponent,
-    IssueAddComponent
+    IssueAddComponent,
+    FilterPipe,
+    ELearningComponent,
+    MenuComponent,
+    LearningPointComponent,
+    AdminpanelComponent,
+    AdminTasksComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +48,8 @@ import { IssueAddComponent } from './issues/issue-add/issue-add.component'
   providers: [
     IssueService,
     SupporterService,
-    CategoryService
+    CategoryService,
+    LearningPointsService
   ],
   bootstrap: [AppComponent]
 })

@@ -9,11 +9,11 @@ export const ISSUES: Issue[] = [
     image: 'inProgress.JPG',
     solution: 'The printjob is failed and will not be printed. The payment will not be withdrawn. The amount is reserved and will be deleted.'
   },
-
+  
   {
     issueId: 2, 
     categoryId: 1, 
-    name: 'Print job stuck "in progress',
+    name: 'No color on prints',
     problem: 'The customer paid but no printjob appeared in the Admin Panel.',
     image: 'inProgress.JPG',
     solution: 'The printjob is failed and will not be printed. The payment will not be withdrawn. The amount is reserved and will be deleted.'
@@ -21,7 +21,7 @@ export const ISSUES: Issue[] = [
   {
     issueId: 3, 
     categoryId: 2, 
-    name: 'Print job stuck "in progress',
+    name: 'App not starting',
     problem: 'The customer paid but no printjob appeared in the Admin Panel.',
     image: 'inProgress.JPG',
     solution: 'The printjob is failed and will not be printed. The payment will not be withdrawn. The amount is reserved and will be deleted.'
@@ -29,7 +29,7 @@ export const ISSUES: Issue[] = [
   {
     issueId: 4, 
     categoryId: 3, 
-    name: 'Print job stuck "in progress',
+    name: 'Print job in progress',
     problem: 'The customer paid but no printjob appeared in the Admin Panel.',
     image: 'inProgress.JPG',
     solution: 'The printjob is failed and will not be printed. The payment will not be withdrawn. The amount is reserved and will be deleted.'
@@ -37,7 +37,7 @@ export const ISSUES: Issue[] = [
   {
     issueId: 5, 
     categoryId: 4, 
-    name: 'Print job stuck "in progress',
+    name: 'Print job failed',
     problem: 'The customer paid but no printjob appeared in the Admin Panel.',
     image: 'inProgress.JPG',
     solution: 'The printjob is failed and will not be printed. The payment will not be withdrawn. The amount is reserved and will be deleted.'
@@ -45,7 +45,7 @@ export const ISSUES: Issue[] = [
   {
     issueId: 6, 
     categoryId: 4, 
-    name: 'Print job stuck "in progress',
+    name: 'Can not pay',
     problem: 'The customer paid but no printjob appeared in the Admin Panel.',
     image: 'inProgress.JPG',
     solution: 'The printjob is failed and will not be printed. The payment will not be withdrawn. The amount is reserved and will be deleted.'
@@ -53,7 +53,7 @@ export const ISSUES: Issue[] = [
   {
     issueId: 7, 
     categoryId: 4, 
-    name: 'Print job stuck "in progress',
+    name: 'Payment failed',
     problem: 'The customer paid but no printjob appeared in the Admin Panel.',
     image: 'inProgress.JPG',
     solution: 'The printjob is failed and will not be printed. The payment will not be withdrawn. The amount is reserved and will be deleted.'
@@ -61,7 +61,7 @@ export const ISSUES: Issue[] = [
   {
     issueId: 8, 
     categoryId: 5, 
-    name: 'Print job stuck "in progress',
+    name: 'Not able to upload files',
     problem: 'The customer paid but no printjob appeared in the Admin Panel.',
     image: 'inProgress.JPG',
     solution: 'The printjob is failed and will not be printed. The payment will not be withdrawn. The amount is reserved and will be deleted.'

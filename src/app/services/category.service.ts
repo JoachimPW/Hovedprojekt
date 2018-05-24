@@ -9,6 +9,6 @@ import { Observable } from 'rxjs/Rx';
 export class CategoryService {
 
   getCategories(): Observable<Category[]> {
-    return Observable.of(CATEGORIES) ;  
+    return Observable.of(CATEGORIES);
   };
 }

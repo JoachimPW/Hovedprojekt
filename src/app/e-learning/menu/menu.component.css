@@ -1,0 +1,17 @@
+.taskMenu {
+    background-color: #152235;
+    width: 200px;
+    height: 90vh;
+    float: left;
+    bottom: 0;
+    position: fixed;
+    border-radius: 1px;
+    border-top-right-radius: 10px;
+    transition: all 2s;
+    font-family: 'raleway';
+    left:0;
+  }
+  
+  .taskMenu :first-child {
+      padding:0;
+  }

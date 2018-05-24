@@ -1,0 +1,91 @@
+<li class="learningPoints" >
+  <a routerLink="/adminpanel">
+    <button class="learningPointClick" id="adminPanel">
+      <i class="fa fa-print"></i> Admin Panel
+    </button>
+  </a>
+</li>
+
+<ul class="learningPoints" *ngIf="router.url === '/adminpanel'">
+  <li *ngFor="let learningPoint of learningPoints">
+    <a routerLink="/adminpanel/learningPoints/{{learningPoint.pointId}}" routerLinkActive="activeCategory" routerLinkActiveOptions="{exact: true}">
+      <button class="learningPointClick">
+        <i class="{{learningPoint.icon}}"></i> {{learningPoint.pointId}}) {{learningPoint.name}}
+      </button>
+    </a>
+  </li>
+</ul>
+
+<ul class="learningPoints" *ngIf="router.url === '/adminpanel/learningPoints/1'">
+  <li *ngFor="let learningPoint of learningPoints">
+    <a routerLink="/adminpanel/learningPoints/{{learningPoint.pointId}}" routerLinkActive="activeCategory" routerLinkActiveOptions="{exact: true}">
+      <button class="learningPointClick">
+        <i class="{{learningPoint.icon}}"></i> {{learningPoint.pointId}}) {{learningPoint.name}}
+      </button>
+    </a>
+  </li>
+</ul>
+
+<ul class="learningPoints" *ngIf="router.url === '/adminpanel/learningPoints/2'">
+  <li *ngFor="let learningPoint of learningPoints">
+    <a routerLink="/adminpanel/learningPoints/{{learningPoint.pointId}}" routerLinkActive="activeCategory" routerLinkActiveOptions="{exact: true}">
+      <button class="learningPointClick">
+        <i class="{{learningPoint.icon}}"></i> {{learningPoint.pointId}}) {{learningPoint.name}}
+      </button>
+    </a>
+  </li>
+</ul>
+
+<ul class="learningPoints" *ngIf="router.url === '/adminpanel/learningPoints/3'">
+  <li *ngFor="let learningPoint of learningPoints">
+    <a routerLink="/adminpanel/learningPoints/{{learningPoint.pointId}}" routerLinkActive="activeCategory" routerLinkActiveOptions="{exact: true}">
+      <button class="learningPointClick">
+        <i class="{{learningPoint.icon}}"></i> {{learningPoint.pointId}}) {{learningPoint.name}}
+      </button>
+    </a>
+  </li>
+</ul>
+
+<ul class="learningPoints" *ngIf="router.url === '/adminpanel/learningPoints/4'">
+  <li *ngFor="let learningPoint of learningPoints">
+    <a routerLink="/adminpanel/learningPoints/{{learningPoint.pointId}}" routerLinkActive="activeCategory" routerLinkActiveOptions="{exact: true}">
+      <button class="learningPointClick">
+        <i class="{{learningPoint.icon}}"></i> {{learningPoint.pointId}}) {{learningPoint.name}}
+      </button>
+    </a>
+  </li>
+</ul>
+
+<ul class="learningPoints" *ngIf="router.url === '/adminpanel/learningPoints/5'">
+  <li *ngFor="let learningPoint of learningPoints">
+    <a routerLink="/adminpanel/learningPoints/{{learningPoint.pointId}}" routerLinkActive="activeCategory" routerLinkActiveOptions="{exact: true}">
+      <button class="learningPointClick">
+        <i class="{{learningPoint.icon}}"></i> {{learningPoint.pointId}}) {{learningPoint.name}}
+      </button>
+    </a>
+  </li>
+</ul>
+
+<li class="learningPoints" >
+    <a>
+      <button class="learningPointClick" id="mobileAPP">
+        <i class="fa fa-mobile"></i> Mobile App
+      </button>
+    </a>
+  </li>
+
+  <li class="learningPoints" >
+    <a>
+      <button class="learningPointClick" id="mobileAPP">
+        <i class="fa fa-tablet"></i> Tablet App
+      </button>
+    </a>
+  </li>
+
+  <li class="learningPoints" >
+    <a>
+      <button class="learningPointClick" id="mobileAPP">
+        <i class="fa fa-desktop"></i> Browser App
+      </button>
+    </a>
+  </li>

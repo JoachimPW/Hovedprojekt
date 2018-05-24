@@ -1,12 +1,14 @@
 <div class="boxContainer">
 
-  <div *ngFor="let issue of issues" class="inlineBlock">
+  <input [(ngModel)]="term" *ngIf="router.url === '/search'" placeholder="Search for your issue" class="issueSearch"> 
+    
+  <div *ngFor="let issue of issues | filter: term" class="inlineBlock">
 
-    <div *ngIf="issue.categoryId===categoryId" class="issueBox" [class.selected]="issue === selectedIssue" (click)="onSelect(issue)">
+    <div *ngIf="issue.categoryId===categoryId || router.url === '/search'" class="issueBox" [class.selected]="issue === selectedIssue" (click)="onSelect(issue)">
       <h3>{{issue.name}} {{issue.issueId}} </h3>
       <p> <b>Problem: </b> {{issue.problem}} </p>
       <div class="imgBox">
-        <img src="../../assets/{{issue.image}}">
+        <img src="assets/{{issue.image}}">
       </div>
       <p> <b>Solution: </b> {{issue.solution}} </p>
     </div>
